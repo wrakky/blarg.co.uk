@@ -16,6 +16,8 @@ markdown: kramdown
 exclude:
   - "node_modules"
   - "package.json"
+  - "assets_src"
+  - "gulp"
 
 include:
   - .nojekyll
