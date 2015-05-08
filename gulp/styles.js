@@ -15,7 +15,7 @@ module.exports = function() {
   return sass(config.paths.src.css + '/site.scss', {
     sourcemap: config.flags.sourcemaps,
     unixNewlines: true,
-    style: config.flags.minified ? 'compressed' : 'nested',
+    style: config.flags.minify ? 'compressed' : 'nested',
     bundleExec: false,
     loadPath: [
       config.paths.nodeModules + '/bootstrap-sass/assets/stylesheets',
