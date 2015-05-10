@@ -1,8 +1,8 @@
 var rootPath = process.cwd();
 var nodeModulesPath = rootPath + '/node_modules';
-var srcPath = rootPath + '/assets_src';
-var buildPath = rootPath + '/assets';
+var srcPath = rootPath + '/assets';
 var sitePath = rootPath + '/_site';
+var assetsPath = sitePath + '/assets';
 
 var paths = {
   root: rootPath,
@@ -14,12 +14,8 @@ var paths = {
     images: srcPath + '/images',
     fonts: srcPath + '/fonts'
   },
-  build: {
-    path: buildPath,
-    js: buildPath + '/js',
-    css: buildPath + '/css',
-    images: buildPath + '/images',
-    fonts: buildPath + '/fonts'
+  assets: {
+    css: assetsPath + '/css'
   },
   nodeModules: nodeModulesPath
 };

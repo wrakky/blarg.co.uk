@@ -16,7 +16,7 @@ markdown: kramdown
 exclude:
   - "node_modules"
   - "package.json"
-  - "assets_src"
+  - "assets"
   - "gulp"
 
 include:

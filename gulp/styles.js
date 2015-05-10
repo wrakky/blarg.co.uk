@@ -27,7 +27,7 @@ module.exports = function() {
       browsers: targetBrowsers
     }))
     .pipe(gulpif(config.flags.sourcemaps, sourcemaps.write()))
-    .pipe(gulp.dest(config.paths.build.css))
+    .pipe(gulp.dest(config.paths.assets.css))
     .pipe(gulpif(refresh.server, refresh()));
 
 };
