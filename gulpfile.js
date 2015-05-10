@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var runSequence = require('run-sequence');
 
 //gulp.task('clean', require('./gulp/clean'));
-//gulp.task('server', require('./gulp/server'));
+gulp.task('server', require('./gulp/server'));
 gulp.task('styles', require('./gulp/styles'));
 //gulp.task('scripts', require('./gulp/scripts'));
 //gulp.task('libs', require('./gulp/libs'));
@@ -31,7 +31,7 @@ gulp.task('default', function(callback) {
     //'lint',
     'build',
     //'watch',
-    //'server',
+    'server',
     callback
   );
 });

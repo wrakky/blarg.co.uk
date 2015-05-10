@@ -2,9 +2,11 @@ var rootPath = process.cwd();
 var nodeModulesPath = rootPath + '/node_modules';
 var srcPath = rootPath + '/assets_src';
 var buildPath = rootPath + '/assets';
+var sitePath = rootPath + '/_site';
 
 var paths = {
   root: rootPath,
+  site: sitePath,
   src: {
     path: srcPath,
     js: srcPath + '/js',
