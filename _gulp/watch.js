@@ -9,4 +9,6 @@ module.exports = function() {
   //gulp.watch(config.paths.src.image + '/**/*', ['images']);
   //gulp.watch(config.paths.src.jsFiles, ['lint']);
 
+  gulp.watch(config.paths.jekyll, ['build']);
+
 };

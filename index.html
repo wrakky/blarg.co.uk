@@ -1,23 +1,70 @@
 ---
 layout: default
+title: blarg.co.uk - technologically astronomical blarg based musings
+description: Web, tools, technology, astronomy and more!
 ---
 
-<div class="home">
+<div class="jumbotron">
+  <h1>blarg.co.uk</h1>
+  <p>technologically astronomical blarg based musings</p>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
+<div class="row">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div class="col-md-6">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <div class="title">
+      <h2><i class="fa fa-arrow-circle-right"></i> Popular Blog Posts</h2>
+    </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <div class="content">
+
+      <div class="post clearfix">
+        <h3><a href="/blog/javascript-date-formats">Javascript Date Formats</a></h3>
+        <p>
+          Javascript script Date objects can be constructed using a date string. This article looks into what counts
+          as a valid date string and which formats are accepted by different browsers and operating systems.
+        </p>
+        <a href="/blog/javascript-date-formats" class="pull-right btn btn-sm btn-primary">Read the full version</a>
+      </div>
+
+      <div class="post clearfix">
+        <h3><a href="/blog/comparison-of-jpeg-lossless-compression-tools">JPEG Lossless Compression Tools</a></h3>
+        <p>
+          Losslessly compressing JPEG files can further reduce their already optimized filesizes without losing any extra image quality.
+          I benchmarked four popular tools for losslessly compressing JPEG files to see which one is the best.
+        </p>
+        <a href="/blog/comparison-of-jpeg-lossless-compression-tools" class="pull-right btn btn-sm btn-primary">Read the full version</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="col-md-6">
+
+    <div class="title">
+      <h2><i class="fa fa-cogs"></i> Tool Spotlight</h2>
+    </div>
+
+    <div class="post clearfix">
+      <h3><a href="/tools/page-ruler">Page Ruler</a></h3>
+      <p>
+        The most popular ruler extension for Google Chrome with over 150,000 users. Page Ruler lets your draw out a ruler to any
+        page and displays the width, height and position of it, outlines elements and more.
+      </p>
+      <a href="/tools/page-ruler" class="pull-right btn btn-sm btn-primary">More information</a>
+    </div>
+
+    <div class="post clearfix">
+      <h3><a href="/astronomy/barn-door-tracker-calculator">How To Build A Barn Door Tracker</a></h3>
+      <p>
+        Take long exposures of the night sky without star trails by building your own barn door tracker. Cheap and simple to construct,
+        this guide will walk you through the process with useful tips and even calculate the dimensions for you.
+      </p>
+      <a href="/astronomy/barn-door-tracker-calculator" class="pull-right btn btn-sm btn-primary">More information</a>
+    </div>
+
+  </div>
 
 </div>

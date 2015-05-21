@@ -14,6 +14,12 @@ var paths = {
     images: srcPath + '/images',
     fonts: srcPath + '/fonts'
   },
+  jekyll: [
+    rootPath + '/**/*.html',
+    rootPath + '/**/*.md',
+    rootPath + '/**/*.yml',
+    '!' + sitePath + '/**'
+  ],
   assets: {
     css: assetsPath + '/css',
     fonts: assetsPath + '/fonts'
