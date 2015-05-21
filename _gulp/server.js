@@ -15,12 +15,9 @@ server.use(livereload({
 
 // rewrite requests with no extension as .html
 var rewriter = function(req, res, next) {
-  console.log(req.url);
   if (fs.existsSync(config.paths.site + req.url + '.html')) {
     req.url = req.url + '.html';
   }
-  console.log(req.url);
-  console.log('----');
   next();
 };
 

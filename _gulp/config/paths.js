@@ -15,7 +15,8 @@ var paths = {
     fonts: srcPath + '/fonts'
   },
   assets: {
-    css: assetsPath + '/css'
+    css: assetsPath + '/css',
+    fonts: assetsPath + '/fonts'
   },
   nodeModules: nodeModulesPath
 };
