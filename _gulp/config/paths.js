@@ -1,6 +1,6 @@
 var rootPath = process.cwd();
 var nodeModulesPath = rootPath + '/node_modules';
-var srcPath = rootPath + '/assets';
+var srcPath = rootPath + '/_assets';
 var sitePath = rootPath + '/_site';
 var assetsPath = sitePath + '/assets';
 
@@ -10,7 +10,7 @@ var paths = {
   src: {
     path: srcPath,
     js: srcPath + '/js',
-    css: srcPath + '/css',
+    sass: srcPath + '/sass',
     images: srcPath + '/images',
     fonts: srcPath + '/fonts'
   },

@@ -12,7 +12,7 @@ var targetBrowsers = 'last 2 Chrome versions';
 
 module.exports = function() {
 
-  return sass(config.paths.src.css + '/site.scss', {
+  return sass(config.paths.src.sass + '/site.scss', {
     sourcemap: config.flags.sourcemaps,
     unixNewlines: true,
     style: config.flags.minify ? 'compressed' : 'nested',
