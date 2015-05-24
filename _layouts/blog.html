@@ -1,10 +1,12 @@
 ---
 layout: sidebar
+pageClass: blog
 ---
 
 <div class="info">
   <div class="pull-left">
     <i class="fa fa-calendar"></i>
+    {{ page.date | date: "%-d %B %Y" }}
   </div>
   <div class="pull-right">
     <i class="fa fa-comments"></i>

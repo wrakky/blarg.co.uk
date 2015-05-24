@@ -3,7 +3,7 @@ layout: blog
 title:  "Alternative DATEDIFF for MySQL"
 heading: "Alternative DATEDIFF for MySQL"
 date:   2010-10-26
-permalink: /blog/test.html
+permalink: /blog/alternative-datediff-for-mysql.html
 categories: mysql code
 ---
 
@@ -24,7 +24,9 @@ SELECT TO_DAYS('2010-01-03') - TO_DAYS('2010-01-01'); -- returns '2'
 This will give the same effect as `DATEDIFF(date1, date2)` by converting each 
 date to the number of days since year 0 and subtracting them.
 
-Note: According the MySQL manual, `TO_DAYS()` is not intended for use with dates
+<span class="label label-success">Note:</span>
+According the [MySQL manual](http://dev.mysql.com/doc/refman/4.1/en/date-and-time-functions.html#function_to-days), 
+`TO_DAYS()` is not intended for use with dates
 that precede the year 1582 because it does not take into account the days that 
 were lost when the Gregorian calendar was introduced so using this method is 
 not advisable for dates earlier than this.

@@ -1,0 +1,68 @@
+.page-blog {
+
+  .post {
+
+    h2 {
+      border-bottom: 1px solid lighten($gray, 20%);
+      margin-bottom: 5px;
+    }
+
+  }
+
+  .info {
+    font-size: 14px;
+    i {
+      padding-right: 3px;
+    }
+  }
+
+  .article {
+    margin-top: 20px;
+  }
+
+  .well.update {
+    margin-top: 20px;
+    h4, p {
+      margin: 0px;
+    }
+  }
+
+  /*
+   * Specific pages
+   */
+
+  .javascript-date-formats {
+
+    .table {
+
+      th {
+        vertical-align: middle;
+        padding: 2px 10px;
+      }
+
+      td {
+        padding: 2px;
+        min-width: 30px;
+        &.s {
+          background-color: $brand-success;
+          color: #ffffff;
+        }
+        &.d {
+          background-color: $brand-danger;
+        }
+        &.w {
+          background-color: $brand-warning;
+        }
+
+        &:first-child {
+          cursor: help;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
