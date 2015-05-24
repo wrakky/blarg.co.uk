@@ -9,7 +9,7 @@
 
 {% include header.html %}
 
-<div id="page" class="container {% if page.pageClass %}page-{{page.pageClass}}{% endif %}">
+<div id="page" class="container{% if page.pageClass %} page-{{page.pageClass}}{% endif %}">
 
   {% include breadcrumbs.html %}
 
