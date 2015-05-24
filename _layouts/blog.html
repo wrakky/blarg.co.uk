@@ -1,0 +1,23 @@
+---
+layout: sidebar
+---
+
+<div class="info">
+  <div class="pull-left">
+    <i class="fa fa-calendar"></i>
+  </div>
+  <div class="pull-right">
+    <i class="fa fa-comments"></i>
+    <a href="<?php echo $model->getUrl(); ?>#disqus_thread"></a>
+  </div>
+</div>
+
+<br class="clearfix">
+
+<div class="article">
+  
+  {{ content }}
+  
+</div>
+
+<hr>
