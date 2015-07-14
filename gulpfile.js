@@ -6,6 +6,7 @@ gulp.task('build', require('./_gulp/build'));
 
 gulp.task('styles', require('./_gulp/styles'));
 gulp.task('fonts', require('./_gulp/fonts'));
+gulp.task('images', require('./_gulp/images'));
 
 gulp.task('server', require('./_gulp/server'));
 gulp.task('watch', require('./_gulp/watch'));
@@ -18,7 +19,8 @@ gulp.task('default', function(callback) {
     'build',
     [
       'styles',
-      'fonts'
+      'fonts',
+      'images'
     ],
     'server',
     'watch',
