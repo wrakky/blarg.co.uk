@@ -12,7 +12,11 @@ layout: page
 
     <div id="sidebar" class="col-md-3">
 
-        sidebar
+      {% for sidebar in page.sidebar %}
+
+        {% include sidebar/{{ sidebar }}.html %}
+      
+      {% endfor %}
 
     </div>
 
