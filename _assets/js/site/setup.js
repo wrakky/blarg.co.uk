@@ -31,6 +31,13 @@
 
     });
 
+    $('[rel=gallery').magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
+
     // bootstrap tooltips
     $('[data-toggle=tooltip]').tooltip({
       container: 'body'
