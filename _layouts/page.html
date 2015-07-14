@@ -10,8 +10,10 @@
 {% include header.html %}
 
 <div id="page" class="container{% if page.pageClass %} page-{{page.pageClass}}{% endif %}">
-
+  
+  {% if page.heading || page.breadcrumbs %}
   {% include breadcrumbs.html %}
+  {% endif %}
 
   {{ content }}
 

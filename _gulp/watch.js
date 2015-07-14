@@ -22,8 +22,15 @@ module.exports = function() {
     gulp.start('scripts.pages', done);
   }));
 
-  watch(config.paths.jekyll, batch(function(events, done) {
-    gulp.start('build', done);
-  }));
+  //gulp.watch(config.paths.jekyll, ['build']);
+  watch(
+    config.paths.jekyll,
+    {
+      ignored: /\/_site\//
+    },
+    batch(function(events, done) {
+      gulp.start('build', done);
+    })
+  );
 
 };
