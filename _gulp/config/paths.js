@@ -23,7 +23,8 @@ var paths = {
   assets: {
     css: assetsPath + '/css',
     fonts: assetsPath + '/fonts',
-    images: assetsPath + '/images'
+    images: assetsPath + '/images',
+    js: assetsPath + '/js'
   },
   nodeModules: nodeModulesPath
 };

@@ -8,6 +8,12 @@ gulp.task('styles', require('./_gulp/styles'));
 gulp.task('fonts', require('./_gulp/fonts'));
 gulp.task('images', require('./_gulp/images'));
 
+var scripts = require('./_gulp/scripts');
+gulp.task('scripts.libs', scripts.libs);
+gulp.task('scripts.site', scripts.site);
+gulp.task('scripts.pages', scripts.pages);
+gulp.task('scripts', ['scripts.libs', 'scripts.site', 'scripts.pages']);
+
 gulp.task('server', require('./_gulp/server'));
 gulp.task('watch', require('./_gulp/watch'));
 
@@ -20,7 +26,8 @@ gulp.task('default', function(callback) {
     [
       'styles',
       'fonts',
-      'images'
+      'images',
+      'scripts'
     ],
     'server',
     'watch',
