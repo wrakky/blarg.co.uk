@@ -8,7 +8,10 @@ var gulpif = require('gulp-if');
 
 var config = require('./config');
 
-var targetBrowsers = 'last 2 Chrome versions';
+var targetBrowsers = [
+  'last 2 versions',
+  '> 5%'
+];
 
 module.exports = function() {
 
