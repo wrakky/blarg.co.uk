@@ -4,6 +4,7 @@
 
         <h1 class="pull-left">{{ page.heading }}</h1>
       
+        {% if page.breadcrumbs != nil %}
         <ol class="pull-right breadcrumb">
           <li><a href="/">Home</a></li>
           {% for breadcrumb in page.breadcrumbs %}
@@ -14,19 +15,7 @@
             {% endif %}
           {% endfor %}
         </ol>
-
-        <!--<?php if (!empty($this->breadcrumbs)) { ?>
-        <ol class="pull-right breadcrumb">
-            <li><a href="/">Home</a></li>
-            <?php foreach ($this->breadcrumbs as $breadcrumb) { ?>
-            <?php if (is_string($breadcrumb)) { ?>
-            <li class="active"><?=$breadcrumb?></li>
-            <?php } else { ?>
-            <li><a href="<?=$breadcrumb[0]?>"><?=$breadcrumb[1]?></a></li>
-            <?php } ?>
-            <?php } ?>
-        </ol>
-        <?php } ?>-->
+        {% endif %}
 
     </div>
 
