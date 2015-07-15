@@ -64,6 +64,12 @@ input::-webkit-inner-spin-button {
     border-radius: 0;
     border-bottom-width: 1px;
 
+    .navbar-brand {
+      &:hover {
+        color: #fff;
+      }
+    }
+
     .navbar-nav {
 
       a {
