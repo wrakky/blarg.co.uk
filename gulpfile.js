@@ -14,6 +14,8 @@ gulp.task('scripts.site', scripts.site);
 gulp.task('scripts.pages', scripts.pages);
 gulp.task('scripts', ['scripts.libs', 'scripts.site', 'scripts.pages']);
 
+gulp.task('blog', require('./_gulp/blog'));
+
 gulp.task('server', require('./_gulp/server'));
 gulp.task('watch', require('./_gulp/watch'));
 
@@ -27,7 +29,8 @@ gulp.task('default', function(callback) {
       'styles',
       'fonts',
       'images',
-      'scripts'
+      'scripts',
+      'blog'
     ],
     'server',
     'watch',
