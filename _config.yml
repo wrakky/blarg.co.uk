@@ -11,6 +11,7 @@ url: "http://blarg.co.uk" # the base hostname & protocol for your site
 twitter_username: wrakky
 github_username:  wrakky
 disqus_name: blargcouk
+excerpt_separator: <!--break-->
 
 paginate: 5
 paginate_path: "/blog/page-:num"
