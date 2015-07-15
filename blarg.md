@@ -80,3 +80,5 @@ Share this page with your fellow blargites or leave your blarg comment below.
 You can share a blarg image or video, discuss the deep inner meaning of blarg or just blarg for the love of it!
 
 <hr>
+
+{% include social.html disqus_title="Join in the Blarging" %}
