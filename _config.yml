@@ -12,6 +12,9 @@ twitter_username: wrakky
 github_username:  wrakky
 disqus_name: blargcouk
 
+paginate: 5
+paginate_path: "/blog/page-:num"
+
 # Build settings
 markdown: kramdown
 

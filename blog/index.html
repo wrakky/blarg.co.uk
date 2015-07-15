@@ -1,0 +1,41 @@
+---
+layout: sidebar
+title: Blog
+heading: Blog
+description: Musings from the mind of a blarger. Technology, astronomy and random stuff.
+pageClass: blog
+breadcrumbs:
+- text: Blog
+---
+
+{% for post in paginator.posts %}
+
+<div class="post clearfix">
+
+  <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+  <div class="info">
+    <div class="pull-left">
+      <i class="fa fa-calendar"></i>
+      {{ post.date | date: "%d %B %Y" }}
+    </div>
+    <div class="pull-right">
+      <i class="fa fa-comments"></i>
+      <a href="{{ site.url }}{{ post.url | link }}#disqus_thread"></a>
+    </div>
+  </div>
+
+  <br class="clearfix">
+
+  <p>{{ post.content | split:"<!--break-->" | first }}</p>
+
+  <a href="{{ post.url }}">
+    <i class="fa fa-arrow-circle-o-right"></i>
+    Read Full Post&hellip;
+  </a>
+
+</div>
+
+{% endfor %}
+
+{% include disqus/count.html %}

@@ -12,7 +12,7 @@ that do not support this function you can make a work-around for it using the
 `TO_DAYS` function. This article show you how to do just that.
 
 The following code shows how to perform the equivalent of `DATEDIFF()` when it 
-is not available:
+is not available: 
 
 {% highlight mysql %}
 SELECT TO_DAYS(date1) - TO_DAYS(date2);
