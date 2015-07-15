@@ -9,7 +9,7 @@
   </div>
 
   <ul class="list-group">
-    {% assign posts = site.posts | sort: 'date' | reversed %}
+    {% assign posts = site.posts %}
     {% for post in posts limit:5 %}
     <li class="list-group-item">
       <a href="{{ post.url | link }}">{{ post.title }}</a>
