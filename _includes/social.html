@@ -1,0 +1,36 @@
+{% assign share_title = include.share_title %}
+{% if share_title == nil %}{% assign share_title = "Share This Page" %}{% endif %}
+
+{% assign disqus_title = include.disqus_title %}
+{% if disqus_title == nil %}{% assign disqus_title = "Join in the Discussion" %}{% endif %}
+
+<div id="share">
+  <h3>{{ share_title }}</h3>
+  
+  <div class="link-group">
+    <a data-network="twitter" class="social-share btn btn-info" href="https://twitter.com/share?url={{ site.url }}{{ page.url | link}}" rel="popup">
+      <i class="fa fa-twitter"></i>
+      <span>Share on </span>Twitter
+    </a>
+  </div>
+  
+  <div class="link-group">
+    <a data-network="facebook" class="social-share btn btn-primary" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url | link}}" rel="popup">
+      <i class="fa fa-facebook-square"></i>
+      <span>Share on </span>Facebook
+    </a>
+  </div>
+  
+  <div class="link-group">
+    <a data-network="googleplus" class="social-share btn btn-danger" href="https://plus.google.com/share?url={{ site.url }}{{ page.url | link}}" rel="popup">
+      <i class="fa fa-google-plus"></i>
+      <span>Share on </span>Google+
+    </a>
+  </div>
+  
+</div>
+
+<hr>
+
+<h3>{{ disqus_title }}</h3>
+{% include disqus/embed.html %}

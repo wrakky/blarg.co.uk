@@ -9,19 +9,19 @@
 
   <div>
     <a data-network="twitter" class="social-share btn btn-info btn-sm"
-       href="https://twitter.com/share?url={{ page.url }}"
+       href="https://twitter.com/share?url={{ site.url }}{{ page.url | link }}"
        rel="popup">
       <i class="fa fa-twitter"></i>
       Twitter
     </a>
     <a data-network="facebook" class="social-share btn btn-primary btn-sm"
-       href="https://www.facebook.com/sharer/sharer.php?u=<{{ page.url }}"
+       href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url | link }}"
        rel="popup">
       <i class="fa fa-facebook-square"></i>
       Facebook
     </a>
     <a data-network="googleplus" class="social-share btn btn-danger btn-sm"
-       href="https://plus.google.com/share?url={{ page.url }}"
+       href="https://plus.google.com/share?url={{ site.url }}{{ page.url | link }}"
        rel="popup">
       <i class="fa fa-google-plus"></i>
       Google+
