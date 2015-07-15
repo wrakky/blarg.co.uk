@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var watch = require('gulp-watch');
 var batch = require('gulp-batch');
+var runSequence = require('run-sequence');
 
 var config = require('./config');
 
@@ -29,7 +30,11 @@ module.exports = function() {
       ignored: /\/_site\//
     },
     batch(function(events, done) {
-      gulp.start('build', done);
+      runSequence(
+        'build',
+        'blog',
+        done
+      );
     })
   );
 
