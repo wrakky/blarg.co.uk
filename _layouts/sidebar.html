@@ -17,6 +17,16 @@ layout: page
         {% include sidebar/{{ sidebar }}.html %}
       
       {% endfor %}
+      
+      {% if page.noSidebarExtra %}{% else %}
+      
+        {% for sidebar in page.sidebarExtra %}
+      
+          {% include sidebar/{{ sidebar }}.html %}
+      
+        {% endfor %}
+      
+      {% endif %}
 
     </div>
 

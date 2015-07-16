@@ -5,6 +5,7 @@ heading: "Alternative DATEDIFF for MySQL"
 date:   2010-10-26
 permalink: /blog/alternative-datediff-for-mysql.html
 categories: mysql code
+noSidebarExtra: true
 ---
 
 The `DATEDIFF()` function was added in MySQL version 4.1.1. For earlier versions
