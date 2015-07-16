@@ -4,7 +4,7 @@ layout: page
 
 <div class="row">
 
-    <div id="content" class="col-md-9">
+    <div id="content" class="col-md-9{% if page.contentClass %} {{ page.contentClass }}{% endif %}">
 
         {{ content }}
 

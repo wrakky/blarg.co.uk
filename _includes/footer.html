@@ -10,6 +10,7 @@
       </p>
 
       <p class="navbar-text pull-right">
+        Hosted on <a href="http://github.com/"class="navbar-link">Github</a>,
         Powered by <a href="http://jekyllrb.com/" class="navbar-link">Jekyll</a>
       </p>
 
@@ -21,3 +22,8 @@
 
 <script src="/assets/js/libs.js"></script>
 <script src="/assets/js/site.js"></script>
+{% if page.scripts %}
+  {% for script in page.scripts %}
+  <script src="{{ script }}"></script>
+  {% endfor %}
+{% endif %}
