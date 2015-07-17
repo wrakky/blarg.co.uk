@@ -6,6 +6,9 @@ description: Blarg! All you ever wanted to know about Blarg but were too afraid 
 pageClass: blarg
 breadcrumbs:
   - text: Blarg
+sidebar:
+  - share
+  - blarg_tweets
 ---
 <blockquote>
   <em>
