@@ -1,0 +1,27 @@
+.page-tools {
+
+  &.tools-index {
+
+    h2 {
+
+      margin-bottom: 30px;
+
+      img {
+
+        position: relative;
+        top: -3px;
+
+      }
+
+    }
+
+  }
+
+  .banner {
+    position: relative;
+    img {
+      max-width: 100%;
+    }
+  }
+
+}

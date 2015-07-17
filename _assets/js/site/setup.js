@@ -31,7 +31,7 @@
 
     });
 
-    $('[rel=gallery').magnificPopup({
+    $('[rel=gallery]').magnificPopup({
       type: 'image',
       gallery: {
         enabled: true
