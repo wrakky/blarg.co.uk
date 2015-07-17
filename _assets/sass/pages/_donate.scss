@@ -1,0 +1,22 @@
+.page-donate {
+
+  table {
+    border-bottom: 1px solid $gray-lighter;
+    margin-top: 0px;
+    td {
+      &.item {
+        width: 325px;
+      }
+      &.amount {
+        text-align: center;
+      }
+    }
+  }
+
+  .side {
+    img {
+      width: 100%;
+    }
+  }
+
+}
