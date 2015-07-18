@@ -2,7 +2,7 @@
 layout: blog
 title:  "Javascript Date Formats"
 heading: "Javascript Date Formats"
-date:   2014-03-28
+date:   2014-03-14
 permalink: /blog/javascript-date-formats
 contentClass: javascript-date-formats
 categories: javascript code
