@@ -13,11 +13,11 @@ sidebarExtra:
 <div class="info">
   <div class="pull-left">
     <i class="fa fa-calendar"></i>
-    {{ page.date | date: "%-d %B %Y" }}
+    {{ page.date | blog_date }}
   </div>
   <div class="pull-right">
     <i class="fa fa-comments"></i>
-    <a href="{{ site.url }}{{ page.url | link }}#disqus_thread"></a>
+    <a href="{{ page.url }}#disqus_thread"></a>
   </div>
 </div>
 
