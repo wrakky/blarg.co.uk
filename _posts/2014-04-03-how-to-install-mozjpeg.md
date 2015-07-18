@@ -2,7 +2,7 @@
 layout: blog
 title:  "How to Install mozjpeg"
 heading: "How to Install mozjpeg"
-date:   2014-03-28
+date:   2014-04-03
 permalink: /blog/how-to-install-mozjpeg
 categories: mozjpeg images code
 ---
