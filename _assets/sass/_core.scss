@@ -164,6 +164,10 @@ input::-webkit-inner-spin-button {
 
     .tweets {
 
+      .loading {
+        color: $gray;
+      }
+
       .tweet {
 
         border-top: 1px solid lighten($btn-default-bg, 30%);
