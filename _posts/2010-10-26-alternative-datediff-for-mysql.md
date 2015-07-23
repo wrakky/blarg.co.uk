@@ -3,7 +3,7 @@ layout: blog
 title:  "Alternative DATEDIFF for MySQL"
 heading: "Alternative DATEDIFF for MySQL"
 date:   2010-10-26
-permalink: /blog/alternative-datediff-for-mysql.html
+permalink: /blog/alternative-datediff-for-mysql
 categories: mysql code
 noSidebarExtra: true
 ---

@@ -17,7 +17,8 @@ var paths = {
   jekyll: [
     rootPath + '/**/*.html',
     rootPath + '/**/*.md',
-    rootPath + '/**/*.yml'
+    rootPath + '/**/*.yml',
+    rootPath + '/**/*.xml'
   ],
   assets: {
     css: assetsPath + '/css',
