@@ -162,11 +162,11 @@ input::-webkit-inner-spin-button {
 
     }
 
-    .tweets {
+    .loading {
+      color: $gray;
+    }
 
-      .loading {
-        color: $gray;
-      }
+    .tweets {
 
       .tweet {
 

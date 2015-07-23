@@ -82,7 +82,7 @@
       generateTweetContent(Blarg.Cache.get(cacheKey), tpl);
     }
     else {
-      $.get(`http://api.blarg.co.uk/tweets/${type}`, data => {
+      $.getJSON(`http://api.blarg.co.uk/tweets/${type}`, data => {
         Blarg.Cache.set(cacheKey, data, 5);
         generateTweetContent(data, tpl);
       });
@@ -91,7 +91,7 @@
   };
 
   if (window.TWEET_TYPE) {
-    getTweets(TWEET_TYPE);
+    getTweets(window.TWEET_TYPE);
   }
 
 })(jQuery);
