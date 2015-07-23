@@ -13,8 +13,8 @@
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - blarg.co.uk</title>
 
-  <!-- Open Graph -->
-  <!-- @todo: open graph tags -->
   {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  
+  {% if page.feed %}<link rel="alternate" type="application/rss+xml" title="blarg.co.uk feed" href="{{ site.url }}/feed.xml" />{% endif %}
 
 </head>
