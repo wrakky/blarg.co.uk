@@ -1,7 +1,7 @@
 var argv = require('yargs').argv;
 
 var flags = {
-  sourcemaps: !argv.nosourcemaps,
+  sourcemaps: !!argv.sourcemaps,
   minify: !!argv.minify
 };
 

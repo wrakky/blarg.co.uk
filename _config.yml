@@ -22,9 +22,11 @@ exclude:
   - node_modules
   - package.json
   - gulpfile.js
+  - deploy.sh
 
 include:
   - .nojekyll
 
 keep_files:
   - assets
+  - .git

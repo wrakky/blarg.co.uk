@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var runSequence = require('run-sequence');
+var config = require('./_gulp/config');
 
 gulp.task('clean', require('./_gulp/clean'));
 gulp.task('build', require('./_gulp/build'));
@@ -15,13 +16,14 @@ gulp.task('scripts.pages', scripts.pages);
 gulp.task('scripts', ['scripts.libs', 'scripts.site', 'scripts.pages']);
 
 gulp.task('blog', require('./_gulp/blog'));
+gulp.task('html', require('./_gulp/html'));
 
 gulp.task('server', require('./_gulp/server'));
 gulp.task('watch', require('./_gulp/watch'));
 
 //---------------
 
-gulp.task('default', function(callback) {
+gulp.task('generate', function(callback) {
   runSequence(
     'clean',
     'build',
@@ -32,6 +34,14 @@ gulp.task('default', function(callback) {
       'scripts',
       'blog'
     ],
+    'html',
+    callback
+  )
+});
+
+gulp.task('default', function(callback) {
+  runSequence(
+    'generate',
     'server',
     'watch',
     callback

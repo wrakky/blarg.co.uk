@@ -40,6 +40,7 @@
     "gulp-if": "^1.2.5",
     "gulp-imagemin": "^2.3.0",
     "gulp-livereload": "^3.8.0",
+    "gulp-minify-html": "^1.0.4",
     "gulp-plumber": "^1.0.1",
     "gulp-ruby-sass": "^1.0.5",
     "gulp-shell": "^0.4.2",
