@@ -3,8 +3,7 @@ var task = args[2];
 
 var environment = {
   local: args.length === 2,
-  development: task === 'deploy',
-  production: task === 'production'
+  deploy: task === 'generate'
 };
 
 Object.keys(environment).forEach(function(key) {
