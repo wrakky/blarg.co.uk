@@ -1,2 +1,3 @@
+Sitemap: http://blarg.co.uk/sitemap.xml
 User-agent: *
 Allow: /
