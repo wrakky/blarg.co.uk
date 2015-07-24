@@ -11,6 +11,7 @@ var config = require('./config');
 var libs = [
   'node_modules/jquery/dist/jquery.js',
   'node_modules/bootstrap/js/tooltip.js',
+  'node_modules/bootstrap/js/collapse.js',
   'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
 ];
 
