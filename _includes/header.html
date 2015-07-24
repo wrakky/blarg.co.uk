@@ -11,15 +11,15 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">blarg.co.uk</a>
+        <a class="navbar-brand" href="{{ site.baseurl }}/">blarg.co.uk</a>
       </div>
 
       <div class="collapse navbar-collapse" id="navbar-links">
         <ul class="nav navbar-nav navbar-right">
-          <li{% if page.pageClass == "blarg" %} class="active"{% endif %}><a href="/blarg">Blarg</a></li>
-          <li{% if page.pageClass == "blog" %} class="active"{% endif %}><a href="/blog">Blog</a></li>
-          <li{% if page.pageClass == "tools" %} class="active"{% endif %}><a href="/tools">Tools</a></li>
-          <li{% if page.pageClass == "astronomy" %} class="active"{% endif %}><a href="/astronomy">Astronomy</a></li>
+          <li{% if page.pageClass == "blarg" %} class="active"{% endif %}><a href="{{ site.baseurl }}/blarg/">Blarg</a></li>
+          <li{% if page.pageClass == "blog" %} class="active"{% endif %}><a href="{{ site.baseurl }}/blog/">Blog</a></li>
+          <li{% if page.pageClass == "tools" %} class="active"{% endif %}><a href="{{ site.baseurl }}/tools/">Tools</a></li>
+          <li{% if page.pageClass == "astronomy" %} class="active"{% endif %}><a href="{{ site.baseurl }}/astronomy/">Astronomy</a></li>
         </ul>
       </div>
 

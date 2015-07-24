@@ -6,10 +6,10 @@
       
         {% if page.breadcrumbs != nil %}
         <ol class="pull-right breadcrumb">
-          <li><a href="/">Home</a></li>
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
           {% for breadcrumb in page.breadcrumbs %}
             {% if breadcrumb.link %}
-            <li><a href="{{ breadcrumb.link }}">{{ breadcrumb.text }}</a></li>
+            <li><a href="{{ site.baseurl }}{{ breadcrumb.link }}">{{ breadcrumb.text }}</a></li>
             {% else %}
             <li class="active">{{ breadcrumb.text }}</li>
             {% endif %}

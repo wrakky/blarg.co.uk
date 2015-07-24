@@ -6,7 +6,7 @@
 
       <p class="navbar-text">
         Copyright &copy; 2015
-        <a href="/" class="navbar-link">blarg.co.uk</a>. All rights reserved.
+        <a href="{{ site.baseurl }}/" class="navbar-link">blarg.co.uk</a>. All rights reserved.
       </p>
 
       <p class="navbar-text pull-right">
@@ -20,10 +20,10 @@
 
 </footer>
 
-<script src="/assets/js/libs.js"></script>
-<script src="/assets/js/site.js"></script>
+<script src="{{ site.baseurl }}/assets/js/libs.js"></script>
+<script src="{{ site.baseurl }}/assets/js/site.js"></script>
 {% if page.scripts %}
   {% for script in page.scripts %}
-  <script src="{{ script }}"></script>
+  <script src="{{ site.baseurl }}{{ script }}"></script>
   {% endfor %}
 {% endif %}

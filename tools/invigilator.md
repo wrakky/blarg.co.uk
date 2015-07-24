@@ -14,7 +14,7 @@ sidebar:
 ---
 
 <div class="banner">
-	<img src="/assets/images/tools/invigilator.png">
+	<img src="{{ site.baseurl }}/assets/images/tools/invigilator.png">
 	<a class="github" href="https://github.com/wrakky/invigilator">
 		<img src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub">
 	</a>
@@ -56,18 +56,18 @@ are oblivious until they discover it for themselves.
 ### Gallery
 <div class="row">
 	<div class="col-xs-6 col-sm-3">
-		<a href="/assets/images/tools/invigilator-1.png" class="thumbnail" rel="gallery" title="Manage your extensions and apps">
-			<img alt="Manage your extensions and apps" src="/assets/images/tools/invigilator-1_small.png">
+		<a href="{{ site.baseurl }}/assets/images/tools/invigilator-1.png" class="thumbnail" rel="gallery" title="Manage your extensions and apps">
+			<img alt="Manage your extensions and apps" src="{{ site.baseurl }}/assets/images/tools/invigilator-1_small.png">
 		</a>
 	</div>
 	<div class="col-xs-6 col-sm-3">
-		<a href="/assets/images/tools/invigilator-2.png" class="thumbnail" rel="gallery" title="View extension history">
-			<img alt="View extension history" src="/assets/images/tools/invigilator-2_small.png">
+		<a href="{{ site.baseurl }}/assets/images/tools/invigilator-2.png" class="thumbnail" rel="gallery" title="View extension history">
+			<img alt="View extension history" src="{{ site.baseurl }}/assets/images/tools/invigilator-2_small.png">
 		</a>
 	</div>
 	<div class="col-xs-6 col-sm-3">
-		<a href="/assets/images/tools/invigilator-3.png" class="thumbnail" rel="gallery" title="Receive extension notifications">
-			<img alt="Receive extension notifications" src="/assets/images/tools/invigilator-3_small.png">
+		<a href="{{ site.baseurl }}/assets/images/tools/invigilator-3.png" class="thumbnail" rel="gallery" title="Receive extension notifications">
+			<img alt="Receive extension notifications" src="{{ site.baseurl }}/assets/images/tools/invigilator-3_small.png">
 		</a>
 	</div>
 </div>

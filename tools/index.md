@@ -11,7 +11,7 @@ sidebar:
   - tools
 ---
 
-## ![Google Chrome Logo](/assets/images/browser/chrome.png) Google Chrome Extensions
+## ![Google Chrome Logo]({{ site.baseurl }}/assets/images/browser/chrome.png) Google Chrome Extensions
 
 <!-- Page Ruler -->
 <div class="row tile">
@@ -19,7 +19,7 @@ sidebar:
 	<div class="tile-inner">
 
 		<div class="col-md-6 tile-img">
-			<a href="/tools/page-ruler"><img src="/assets/images/tools/page-ruler.png" alt="Page Ruler"></a>
+			<a href="{{ site.baseurl }}/tools/page-ruler"><img src="{{ site.baseurl }}/assets/images/tools/page-ruler.png" alt="Page Ruler"></a>
 		</div>
 
 		<div class="col-md-6 tile-info">
@@ -41,7 +41,7 @@ sidebar:
 	<div class="tile-inner">
 
 		<div class="col-md-6 tile-img">
-			<a href="/tools/robots-vs-humans"><img src="/assets/images/tools/robots-vs-humans.png" alt="Robots vs Humans"></a>
+			<a href="{{ site.baseurl }}/tools/robots-vs-humans"><img src="{{ site.baseurl }}/assets/images/tools/robots-vs-humans.png" alt="Robots vs Humans"></a>
 		</div>
 
 		<div class="col-md-6 tile-info">
@@ -64,7 +64,7 @@ sidebar:
 	<div class="tile-inner">
 
 		<div class="col-md-6 tile-img">
-			<a href="/tools/invigilator"><img src="/assets/images/tools/invigilator.png" alt="Invigilator"></a>
+			<a href="{{ site.baseurl }}/tools/invigilator"><img src="{{ site.baseurl }}/assets/images/tools/invigilator.png" alt="Invigilator"></a>
 		</div>
 
 		<div class="col-md-6 tile-info">

@@ -10,6 +10,7 @@ sidebar:
   - share
   - blarg_tweets
 ---
+
 <blockquote>
   <em>
     Blarg is a unique word, being the only word that not only means anything you want it to, or is used
@@ -47,33 +48,33 @@ sure to enlighten to even the most blarg sceptic of people.
 
 <div class="row">
   <div class="col-xs-6 col-sm-3 col-md-2">
-    <a href="/assets/images/blarg/car.jpg" class="thumbnail" rel="gallery" title="What could be better than zooming around in your very own Blarg mobile?">
-      <img alt="Blarg Car" src="/assets/images/blarg/car_tn.jpg">
+    <a href="{{ site.baseurl }}/assets/images/blarg/car.jpg" class="thumbnail" rel="gallery" title="What could be better than zooming around in your very own Blarg mobile?">
+      <img alt="Blarg Car" src="{{ site.baseurl }}/assets/images/blarg/car_tn.jpg">
     </a>
   </div>
   <div class="col-xs-6 col-sm-3 col-md-2">
-    <a href="/assets/images/blarg/raptor.jpg" class="thumbnail" rel="gallery" title="Blarg + Raptor = Awesome">
-      <img alt="Blarg Raptor" src="/assets/images/blarg/raptor_tn.jpg">
+    <a href="{{ site.baseurl }}/assets/images/blarg/raptor.jpg" class="thumbnail" rel="gallery" title="Blarg + Raptor = Awesome">
+      <img alt="Blarg Raptor" src="{{ site.baseurl }}/assets/images/blarg/raptor_tn.jpg">
     </a>
   </div>
   <div class="col-xs-6 col-sm-3 col-md-2">
-    <a href="/assets/images/blarg/cavemen.png" class="thumbnail" rel="gallery" title="Even cavemen loved blarg">
-      <img alt="Blarg Cavemen" src="/assets/images/blarg/cavemen_tn.png">
+    <a href="{{ site.baseurl }}/assets/images/blarg/cavemen.png" class="thumbnail" rel="gallery" title="Even cavemen loved blarg">
+      <img alt="Blarg Cavemen" src="{{ site.baseurl }}/assets/images/blarg/cavemen_tn.png">
     </a>
   </div>
   <div class="col-xs-6 col-sm-3 col-md-2">
-    <a href="/assets/images/blarg/owl.jpg" class="thumbnail" rel="gallery" title="I'm not sure what's going on here but it's some kind of owly blarg magic">
-      <img alt="Owl Blarg" src="/assets/images/blarg/owl_tn.jpg">
+    <a href="{{ site.baseurl }}/assets/images/blarg/owl.jpg" class="thumbnail" rel="gallery" title="I'm not sure what's going on here but it's some kind of owly blarg magic">
+      <img alt="Owl Blarg" src="{{ site.baseurl }}/assets/images/blarg/owl_tn.jpg">
     </a>
   </div>
   <div class="col-xs-6 col-sm-3 col-md-2">
-    <a href="/assets/images/blarg/keep-calm.png" class="thumbnail" rel="gallery" title="Sound advice my wise blarg poster friend">
-      <img alt="Keep Calm" src="/assets/images/blarg/keep-calm_tn.png">
+    <a href="{{ site.baseurl }}/assets/images/blarg/keep-calm.png" class="thumbnail" rel="gallery" title="Sound advice my wise blarg poster friend">
+      <img alt="Keep Calm" src="{{ site.baseurl }}/assets/images/blarg/keep-calm_tn.png">
     </a>
   </div>
   <div class="col-xs-6 col-sm-3 col-md-2">
-    <a href="/assets/images/blarg/cat.jpg" class="thumbnail" rel="gallery" title="Business cat Dylan thinks blarg makes economic sense">
-      <img alt="Blarg Cat" src="/assets/images/blarg/cat_tn.jpg">
+    <a href="{{ site.baseurl }}/assets/images/blarg/cat.jpg" class="thumbnail" rel="gallery" title="Business cat Dylan thinks blarg makes economic sense">
+      <img alt="Blarg Cat" src="{{ site.baseurl }}/assets/images/blarg/cat_tn.jpg">
     </a>
   </div>
 </div>

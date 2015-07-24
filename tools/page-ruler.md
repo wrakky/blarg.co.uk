@@ -14,7 +14,7 @@ sidebar:
 ---
 
 <div class="banner">
-	<img src="/assets/images/tools/page-ruler.png">
+	<img src="{{ site.baseurl }}/assets/images/tools/page-ruler.png">
 	<a class="github" href="https://github.com/wrakky/page-ruler">
 		<img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
 	</a>
@@ -46,23 +46,23 @@ ruler extension for Chrome.
 
 <div class="row">
 	<div class="col-xs-6 col-sm-3">
-		<a href="/assets/images/tools/page-ruler-1.png" class="thumbnail" rel="gallery" title="Page Ruler with guides">
-			<img alt="Page Ruler with guides" src="/assets/images/tools/page-ruler-1_small.png">
+		<a href="{{ site.baseurl }}/assets/images/tools/page-ruler-1.png" class="thumbnail" rel="gallery" title="Page Ruler with guides">
+			<img alt="Page Ruler with guides" src="{{ site.baseurl }}/assets/images/tools/page-ruler-1_small.png">
 		</a>
 	</div>
 	<div class="col-xs-6 col-sm-3">
-		<a href="/assets/images/tools/page-ruler-2.png" class="thumbnail" rel="gallery" title="Element Mode">
-			<img alt="Element Mode" src="/assets/images/tools/page-ruler-2_small.png">
+		<a href="{{ site.baseurl }}/assets/images/tools/page-ruler-2.png" class="thumbnail" rel="gallery" title="Element Mode">
+			<img alt="Element Mode" src="{{ site.baseurl }}/assets/images/tools/page-ruler-2_small.png">
 		</a>
 	</div>
 	<div class="col-xs-6 col-sm-3">
-		<a href="/assets/images/tools/page-ruler-3.png" class="thumbnail" rel="gallery" title="Change ruler colour">
-			<img alt="Change ruler colour" src="/assets/images/tools/page-ruler-3_small.png">
+		<a href="{{ site.baseurl }}/assets/images/tools/page-ruler-3.png" class="thumbnail" rel="gallery" title="Change ruler colour">
+			<img alt="Change ruler colour" src="{{ site.baseurl }}/assets/images/tools/page-ruler-3_small.png">
 		</a>
 	</div>
 	<div class="col-xs-6 col-sm-3">
-		<a href="/assets/images/tools/page-ruler-4.png" class="thumbnail" rel="gallery" title="Dock to bottom without guides">
-			<img alt="Dock to bottom without guides" src="/assets/images/tools/page-ruler-4_small.png">
+		<a href="{{ site.baseurl }}/assets/images/tools/page-ruler-4.png" class="thumbnail" rel="gallery" title="Dock to bottom without guides">
+			<img alt="Dock to bottom without guides" src="{{ site.baseurl }}/assets/images/tools/page-ruler-4_small.png">
 		</a>
 	</div>
 </div>

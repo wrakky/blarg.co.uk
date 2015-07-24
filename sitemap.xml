@@ -6,10 +6,10 @@
         <loc>{{ site.url }}/</loc>
     </url>
     <url>
-        <loc>{{ site.url }}/blarg</loc>
+        <loc>{{ site.url }}/blarg/</loc>
     </url>
     <url>
-        <loc>{{ site.url }}/blog</loc>
+        <loc>{{ site.url }}/blog/</loc>
     </url>
     {% for post in site.posts %}
     <url>
@@ -17,7 +17,7 @@
     </url>
     {% endfor %}
     <url>
-        <loc>{{ site.url }}/tools</loc>
+        <loc>{{ site.url }}/tools/</loc>
     </url>
     <url>
         <loc>{{ site.url }}/tools/page-ruler</loc>
@@ -29,7 +29,7 @@
         <loc>{{ site.url }}/tools/invigilator</loc>
     </url>
     <url>
-        <loc>{{ site.url }}/astronomy</loc>
+        <loc>{{ site.url }}/astronomy/</loc>
     </url>
     <url>
         <loc>{{ site.url }}/astronomy/barn-door-tracker</loc>

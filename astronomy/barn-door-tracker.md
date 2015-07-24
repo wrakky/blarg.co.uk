@@ -42,7 +42,7 @@ sidebar:
 	and prevents star trails. The diagram below gives a basic indication of the finished structure.
 </p>
 <div class="thumbnail">
-	<img src="/assets/images/astronomy/barn-door-tracker.png" title="Barn door tracker example" alt="Barn door tracker example">
+	<img src="{{ site.baseurl }}/assets/images/astronomy/barn-door-tracker.png" title="Barn door tracker example" alt="Barn door tracker example">
 </div>
 <p>
 	The most important part of the barn door tracker is the radius of the curvature - the distance between the drive bolt and hinge.
@@ -54,7 +54,7 @@ sidebar:
 	I have created a tool which will automatically calculate the distance needed in either inches, cm or mm and is also preset for the
 	standard metric screw sizes such as M6 and M8 where the thread size is not obvious.
 </p>
-<a href="/astronomy/barn-door-tracker-calculator" class="btn btn-primary">View the Barn Door Tracker Calculation Tool</a>
+<a href="{{ site.baseurl }}/astronomy/barn-door-tracker-calculator" class="btn btn-primary">View the Barn Door Tracker Calculation Tool</a>
 
 <h2 id="build">Build Process</h2>
 <p>
@@ -233,33 +233,33 @@ sidebar:
 <p>Here are some photos of my completed barn door tracker. The larger versions of each photo are annotated with the part numbers in the Parts section below.</p>
 <div class="row">
 	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="/assets/images/astronomy/barn-door-1.jpg" class="thumbnail" rel="gallery" title="Barn door tracker">
-			<img alt="Blarg Car" src="/assets/images/astronomy/barn-door-1_tn.jpg">
+		<a href="{{ site.baseurl }}/assets/images/astronomy/barn-door-1.jpg" class="thumbnail" rel="gallery" title="Barn door tracker">
+			<img alt="Blarg Car" src="{{ site.baseurl }}/assets/images/astronomy/barn-door-1_tn.jpg">
 		</a>
 	</div>
 	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="/assets/images/astronomy/barn-door-2.jpg" class="thumbnail" rel="gallery" title="Alernative angle">
-			<img alt="Blarg Raptor" src="/assets/images/astronomy/barn-door-2_tn.jpg">
+		<a href="{{ site.baseurl }}/assets/images/astronomy/barn-door-2.jpg" class="thumbnail" rel="gallery" title="Alernative angle">
+			<img alt="Blarg Raptor" src="{{ site.baseurl }}/assets/images/astronomy/barn-door-2_tn.jpg">
 		</a>
 	</div>
 	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="/assets/images/astronomy/barn-door-3.jpg" class="thumbnail" rel="gallery" title="Close up of the hinge">
-			<img alt="Blarg Cavemen" src="/assets/images/astronomy/barn-door-3_tn.jpg">
+		<a href="{{ site.baseurl }}/assets/images/astronomy/barn-door-3.jpg" class="thumbnail" rel="gallery" title="Close up of the hinge">
+			<img alt="Blarg Cavemen" src="{{ site.baseurl }}/assets/images/astronomy/barn-door-3_tn.jpg">
 		</a>
 	</div>
 	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="/assets/images/astronomy/barn-door-4.jpg" class="thumbnail" rel="gallery" title="Drive bolt and turning disc">
-			<img alt="Owl Blarg" src="/assets/images/astronomy/barn-door-4_tn.jpg">
+		<a href="{{ site.baseurl }}/assets/images/astronomy/barn-door-4.jpg" class="thumbnail" rel="gallery" title="Drive bolt and turning disc">
+			<img alt="Owl Blarg" src="{{ site.baseurl }}/assets/images/astronomy/barn-door-4_tn.jpg">
 		</a>
 	</div>
 	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="/assets/images/astronomy/barn-door-5.jpg" class="thumbnail" rel="gallery" title="Opened up showing internal screws">
-			<img alt="Keep Calm" src="/assets/images/astronomy/barn-door-5_tn.jpg">
+		<a href="{{ site.baseurl }}/assets/images/astronomy/barn-door-5.jpg" class="thumbnail" rel="gallery" title="Opened up showing internal screws">
+			<img alt="Keep Calm" src="{{ site.baseurl }}/assets/images/astronomy/barn-door-5_tn.jpg">
 		</a>
 	</div>
 	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="/assets/images/astronomy/barn-door-6.jpg" class="thumbnail" rel="gallery" title="View from below">
-			<img alt="Blarg Cat" src="/assets/images/astronomy/barn-door-6_tn.jpg">
+		<a href="{{ site.baseurl }}/assets/images/astronomy/barn-door-6.jpg" class="thumbnail" rel="gallery" title="View from below">
+			<img alt="Blarg Cat" src="{{ site.baseurl }}/assets/images/astronomy/barn-door-6_tn.jpg">
 		</a>
 	</div>
 </div>

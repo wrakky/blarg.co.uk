@@ -12,25 +12,25 @@ var blogPath = sitePath + '/blog';
 
 module.exports = function(done) {
 
-  if (fs.existsSync(blogPath + '/index.html')) {
-    // move blog index to root dir
-    fs.renameSync(blogPath + '/index.html', sitePath + '/blog.html');
-  }
-
   // traverse every blog index file
   fsTools.walkSync(blogPath, 'index.html$', function(path) {
 
-    // get folder name
-    var dir = /\/([^\/]+)\/index\.html$/.exec(path)[1];
-    var newPath = blogPath + '/' + dir + '.html';
+    // ignore blog index
+    if (path !== blogPath + '/index.html') {
 
-    if (fs.existsSync(path)) {
+      // get folder name
+      var dir = /\/([^\/]+)\/index\.html$/.exec(path)[1];
+      var newPath = blogPath + '/' + dir + '.html';
 
-      // move to blog dir
-      fs.renameSync(path, newPath);
+      if (fs.existsSync(path)) {
 
-      // remove folder
-      fs.rmdirSync(blogPath + '/' + dir);
+        // move to blog dir
+        fs.renameSync(path, newPath);
+
+        // remove folder
+        fs.rmdirSync(blogPath + '/' + dir);
+      }
+
     }
 
   });

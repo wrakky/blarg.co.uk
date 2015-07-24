@@ -14,7 +14,7 @@ sidebar:
 ---
 
 <div class="banner">
-	<img src="/assets/images/tools/robots-vs-humans.png">
+	<img src="{{ site.baseurl }}/assets/images/tools/robots-vs-humans.png">
 	<a class="github" href="https://github.com/wrakky/chrome-robots-vs-humans">
 		<img src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub">
 	</a>
@@ -43,23 +43,23 @@ can be found at their respective websites.
 ### Gallery
 <div class="row">
 	<div class="col-xs-6 col-sm-3">
-		<a href="/assets/images/tools/robots-vs-humans-1.png" class="thumbnail" rel="gallery" title="Viewing a robots.txt file">
-			<img alt="Viewing a robots.txt file" src="/assets/images/tools/robots-vs-humans-1_small.png">
+		<a href="{{ site.baseurl }}/assets/images/tools/robots-vs-humans-1.png" class="thumbnail" rel="gallery" title="Viewing a robots.txt file">
+			<img alt="Viewing a robots.txt file" src="{{ site.baseurl }}/assets/images/tools/robots-vs-humans-1_small.png">
 		</a>
 	</div>
 	<div class="col-xs-6 col-sm-3">
-		<a href="/assets/images/tools/robots-vs-humans-2.png" class="thumbnail" rel="gallery" title="Viewing a humans.txt file">
-			<img alt="Viewing a humans.txt file" src="/assets/images/tools/robots-vs-humans-2_small.png">
+		<a href="{{ site.baseurl }}/assets/images/tools/robots-vs-humans-2.png" class="thumbnail" rel="gallery" title="Viewing a humans.txt file">
+			<img alt="Viewing a humans.txt file" src="{{ site.baseurl }}/assets/images/tools/robots-vs-humans-2_small.png">
 		</a>
 	</div>
 	<div class="col-xs-6 col-sm-3">
-		<a href="/assets/images/tools/robots-vs-humans-3.png" class="thumbnail" rel="gallery" title="Getting ready for battle">
-			<img alt="Getting ready for battle" src="/assets/images/tools/robots-vs-humans-3_small.png">
+		<a href="{{ site.baseurl }}/assets/images/tools/robots-vs-humans-3.png" class="thumbnail" rel="gallery" title="Getting ready for battle">
+			<img alt="Getting ready for battle" src="{{ site.baseurl }}/assets/images/tools/robots-vs-humans-3_small.png">
 		</a>
 	</div>
 	<div class="col-xs-6 col-sm-3">
-		<a href="/assets/images/tools/robots-vs-humans-4.png" class="thumbnail" rel="gallery" title="Humans win! Humanity is saved... for now">
-			<img alt="Humans win! Humanity is saved... for now" src="/assets/images/tools/robots-vs-humans-4_small.png">
+		<a href="{{ site.baseurl }}/assets/images/tools/robots-vs-humans-4.png" class="thumbnail" rel="gallery" title="Humans win! Humanity is saved... for now">
+			<img alt="Humans win! Humanity is saved... for now" src="{{ site.baseurl }}/assets/images/tools/robots-vs-humans-4_small.png">
 		</a>
 	</div>
 </div>
