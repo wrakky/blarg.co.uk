@@ -7,7 +7,7 @@
   margin-bottom: 15px;
 
   .c     { color: #998; font-style: italic } // Comment
-  .err   { color: #a61717; background-color: #e3d2d2 } // Error
+  .err   { color: #a67f59; } // Error
   .k     { color: #07a; } // Keyword
   .o     { color: #a67f59; } // Operator
   .cm    { color: #708090; } // Comment.Multiline
@@ -59,7 +59,7 @@
   .sh    { color: #d14 } // Literal.String.Heredoc
   .si    { color: #d14 } // Literal.String.Interpol
   .sx    { color: #d14 } // Literal.String.Other
-  .sr    { color: #009926 } // Literal.String.Regex
+  .sr    { color: #000 } // Literal.String.Regex
   .s1    { color: #690; } // Literal.String.Single
   .ss    { color: #990073 } // Literal.String.Symbol
   .bp    { color: #999 } // Name.Builtin.Pseudo

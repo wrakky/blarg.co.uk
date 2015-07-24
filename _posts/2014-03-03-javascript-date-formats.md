@@ -75,7 +75,7 @@ var validDate = new Date(2013, 7, 9);
 // array of all date formats to test
 var dateFormats = [...];
 
-for (var i=0; i&lt;dateFormats.length; i++) {
+for (var i=0; i<dateFormats.length; i++) {
 
 	// create date from the current format
 	var testDate = new Date(dateFormats[i]);
