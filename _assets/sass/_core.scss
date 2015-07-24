@@ -17,6 +17,10 @@ input::-webkit-inner-spin-button {
     li {
       display: inline;
       list-style: none;
+      margin-right: 3px;
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
     &.social {
       a {
