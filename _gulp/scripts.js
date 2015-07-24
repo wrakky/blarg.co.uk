@@ -20,7 +20,9 @@ var bundle = function(input, output, dest) {
     return gulp.src(input)
       .pipe(plumber())
       .pipe(gulpif(config.flags.sourcemaps, sourcemaps.init()))
-      .pipe(babel())
+      .pipe(babel({
+        ignore: /node_modules/
+      }))
       .pipe(gulpif(config.flags.minify, uglify()))
       .pipe(gulpif(!!output, concat(output || 'empty')))
       .pipe(gulpif(config.flags.sourcemaps, sourcemaps.write()))
