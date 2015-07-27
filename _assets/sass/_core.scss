@@ -373,3 +373,9 @@ table.table-centered {
     text-align: center;
   }
 }
+
+@media screen and (max-width: $screen-xs-max) {
+  .container .jumbotron, .container-fluid .jumbotron {
+    padding: 10px 20px;
+  }
+}
