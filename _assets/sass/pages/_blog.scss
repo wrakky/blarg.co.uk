@@ -43,10 +43,15 @@
     margin-top: 20px;
   }
 
-  .well.update {
-    margin-top: 20px;
-    h4, p {
-      margin: 0px;
+  .well {
+    &.update {
+      margin-top: 20px;
+      h4, p {
+        margin: 0;
+      }
+    }
+    &.note {
+      margin: 20px 0;
     }
   }
 
