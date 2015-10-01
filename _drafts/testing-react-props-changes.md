@@ -2,7 +2,7 @@
 layout: blog
 title:  "Testing Prop Changes in React"
 heading: "Testing Prop Changes in React"
-date:   2015-07-24
+date:   2015-09-24
 permalink: /blog/testing-react-prop-changes
 categories: javascript react code
 ---
@@ -22,18 +22,18 @@ how `props` can be tested for components created with both `React.createClass()`
   <strong>Note:</strong> all example code in this article is written using <a href="https://github.com/lukehoban/es6features">ES6</a> and 
   <a href="https://facebook.github.io/react/docs/jsx-in-depth.html">JSX</a> with tests using the
   <a href="https://facebook.github.io/react/docs/test-utils.html">React TestUtils</a> and 
-  <a href="http://jasmine.github.io/">Jasmine</a> BDD testing framework. The latest version of React
-  at time of writing was <code>0.13</code>.
+  <a href="http://jasmine.github.io/">Jasmine</a> BDD testing framework. The latest released version of React
+  at time of writing was <code>0.13.3</code>
 </div>
 
 ## React.createClass()
 
-Prior to version 0.13, components were created in React using the [React.createClass()](http://facebook.github.io/react/docs/top-level-api.html#react.createclass) method. This made testing
-changes to `props` straightforward as all components created in this way have a [setProps()](http://facebook.github.io/react/docs/component-api.html#setprops) method which can be 
-passed an object to update the props of the component (much like how [setState()](http://facebook.github.io/react/docs/component-api.html#setprops) works for updating state)
-and would then trigger a re-render.
+Prior to version 0.13, components were created in React using the [React.createClass()](http://facebook.github.io/react/docs/top-level-api.html#react.createclass) method.
+Testing changes to `props` for components created in this way is relatively straightforward as the [setProps()](http://facebook.github.io/react/docs/component-api.html#setprops) method 
+is available and can be passed an object to update the props of the component (much like how [setState()](http://facebook.github.io/react/docs/component-api.html#setprops) works for updating state)
+which will then trigger a re-render.
 
-As an example, I will create a simple component which just outputs the value of the `text` prop in a div:
+As an example, here is a test for a simple component which just outputs the value of the `text` prop in a div:
 
 {% highlight javascript %}
 import React from 'react';
@@ -44,10 +44,10 @@ const TestComponent = React.createClass({
   }
 });
 
-export default MyComponent;
+export default TestComponent;
 {% endhighlight %}
 
-and then write a test to make sure that the text in the div is updated when the props are changed:
+and this is a test to make sure that the text in the div is updated when the props are changed:
 
 {% highlight javascript %}
 import React from 'react/addons';
@@ -57,7 +57,7 @@ import TestComponent from 'path/to/TestComponent';
 
 describe('Testing props change', () => {
 
-  it('should update the text', () => {
+  it('should update the div text when the text prop is changed', () => {
   
     let instance, div, divDOM;
   
@@ -94,7 +94,17 @@ describe('Testing props change', () => {
 
 ## React.Component
 
-React 0.13 introduced [support for ES6 classes](https://facebook.github.io/react/blog/2015/01/27/react-v0.13.0-beta-1.html) which 
+React 0.13 introduced [support for ES6 classes](https://facebook.github.io/react/blog/2015/01/27/react-v0.13.0-beta-1.html).
+The added convenience and power of being able to use (soon to be) native classes came at the price of losing several existing methods
+from `React.createClass()` including `setProps()`. This means that another approach is required for testing prop changes on these
+component types.
+
+This solution creates another component to act as a container for the component that is to be tested. The state of 
+that container can be passed down to the test component as it's props and whenever changing props needs to be tested, all that needs
+to be done is to update the state of the container which will then trigger it to re-render and pass down it's updated state as the
+new props of the test component.
+
+This example demonstrates how this solution can be implemented for a simple ES6 class component created by extending `React.Component`: 
 
 {% highlight javascript %}
 import React from 'react';
@@ -104,7 +114,18 @@ class TestComponent extends React.Component {
     return <div>{this.props.text}</div>;
   }
 }
+
+export default TestComponent;
 {% endhighlight %}
+
+Setting up the container in multiple files will get tedious so this reusable helper function can be utilised  used to render the 
+container and the component inside of it.
+
+The helper function takes the component to test and it's default props as arguments. It then internally creates a container class 
+that will set the default props as it's state, and render the test component inside of it, passing down the state as props.
+
+The container is then rendered to the document and finally the function returns both the container and test component so that
+the tests can have access to them both.
 
 {% highlight javascript %}
 import React from 'react/addons';
@@ -152,6 +173,9 @@ function render(component, componentProps={}) {
 export default render;
 {% endhighlight %}
 
+Finally, the test file uses the above `render()` function and makes changes the state of the container component which in turn 
+updates the props on the test component and allows changes to it's props to be tested.
+
 {% highlight javascript %}
 import React from 'react/addons';
 const TestUtils = React.addons.TestUtils;
@@ -161,23 +185,23 @@ import TestComponent from 'path/to/TestComponent';
 
 describe('Testing props change', () => {
 
-  it('should update the text', () => {
+  it('should update the div text when the text prop is changed', () => {
   
     let container, instance, div, divDOM;
   
-    // render an instance of the TestComponent inside a container
+    // render an instance of the TestComponent inside a container and set the default props
     [container, instance] = render(TestComponent, { text: 'original text' });
     
-    // find the rendered div
+    // find the rendered div inside instance
     div = TestUtils.findRenderedDOMComponentWithTag(instance, 'div');
     divDOM = React.findDOMNode(div);
     
     // the div text should be the same as the text prop
     expect(divDOM.textContent).toBe('original text');
     
-    // update the props
-    // setProps is asynchronous so any tests after calling it should be within a callback
-    // to be certain the changes have been processed
+    // update the state of the container
+    // this will trigger a re-render on the container which will then pass down 
+    // the updated state to the instance as it's new props
     container.setState({
       text: 'new text'
     }, () => {      
@@ -196,4 +220,7 @@ describe('Testing props change', () => {
 });
 {% endhighlight %}
 
-Warning: Don't set .props.text of the React component. Instead, specify the correct value when initially creating the element or use React.cloneElement to make a new element with updated props.
+### Conclusion
+
+So there you have it - two ways to test prop changes in React components.
+Do you know any better methods to test props? Be sure to let us know in the comments!

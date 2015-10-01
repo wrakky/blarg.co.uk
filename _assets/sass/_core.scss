@@ -374,6 +374,11 @@ table.table-centered {
   }
 }
 
+pre > code {
+  white-space: pre;
+  overflow-wrap: normal;
+}
+
 @media screen and (max-width: $screen-xs-max) {
   .container .jumbotron, .container-fluid .jumbotron {
     padding: 10px 20px;
