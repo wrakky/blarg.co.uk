@@ -11,12 +11,12 @@ Jekyll repository for my personal site, blarg.co.uk. All content is copyright of
 
 ```
 npm install
-gulp
+npm start
 ```
 
 #### Flags
 
-`minify` flag for minfiying resources, sourcemaps falg for generating sourcemaps.
+`minify` flag for minfiying resources, sourcemaps flag for generating sourcemaps.
 
 ```
 gulp --minify --sourcemaps
@@ -27,7 +27,7 @@ gulp --minify --sourcemaps
 Generates site, minifies images, js, css and html. Adds files to gh-pages branch and pushes to github.
 
 ```
-./deploy.sh
+npm run deploy
 ```
 
 ## License
