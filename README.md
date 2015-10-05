@@ -5,18 +5,30 @@ Jekyll repository for my personal site, blarg.co.uk. All content is copyright of
 * Site: http://blarg.co.uk
 * Twitter: [@wrakky](https://twitter.com/wrakky)
 
-## Building
-
-### Local Version
+## Dependencies
 
 ```
 npm install
-gulp
+gem install jekyll facets rouge
+```
+
+Check out the gh-pages branch
+
+```
+git clone git@github.com:wrakky/blarg.co.uk.git -b gh-pages _site
+```
+
+## Building
+
+### Development Version
+
+```
+npm start
 ```
 
 #### Flags
 
-`minify` flag for minfiying resources, sourcemaps falg for generating sourcemaps.
+`minify` flag for minfiying resources, sourcemaps flag for generating sourcemaps.
 
 ```
 gulp --minify --sourcemaps
@@ -27,7 +39,7 @@ gulp --minify --sourcemaps
 Generates site, minifies images, js, css and html. Adds files to gh-pages branch and pushes to github.
 
 ```
-./deploy.sh
+npm run deploy
 ```
 
 ## License
