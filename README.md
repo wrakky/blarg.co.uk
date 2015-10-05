@@ -5,12 +5,24 @@ Jekyll repository for my personal site, blarg.co.uk. All content is copyright of
 * Site: http://blarg.co.uk
 * Twitter: [@wrakky](https://twitter.com/wrakky)
 
-## Building
-
-### Local Version
+## Dependencies
 
 ```
 npm install
+gem install jekyll facets rouge
+```
+
+Check out the gh-pages branch
+
+```
+git clone git@github.com:wrakky/blarg.co.uk.git -b gh-pages _site
+```
+
+## Building
+
+### Development Version
+
+```
 npm start
 ```
 
