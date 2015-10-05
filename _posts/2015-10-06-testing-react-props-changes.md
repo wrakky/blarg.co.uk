@@ -2,7 +2,7 @@
 layout: blog
 title:  "Testing Prop Changes in React"
 heading: "Testing Prop Changes in React"
-date:   2015-09-24
+date:   2015-10-06
 permalink: /blog/testing-react-prop-changes
 categories: javascript react code
 ---
@@ -95,13 +95,13 @@ describe('Testing props change', () => {
 ## React.Component
 
 React 0.13 introduced [support for ES6 classes](https://facebook.github.io/react/blog/2015/01/27/react-v0.13.0-beta-1.html).
-The added convenience and power of being able to use (soon to be) native classes came at the price of losing several existing methods
+The added convenience and power of being able to use native classes came at the price of losing several existing methods
 from `React.createClass()` including `setProps()`. This means that another approach is required for testing prop changes on these
 component types.
 
-This solution creates another component to act as a container for the component that is to be tested. The state of 
-that container can be passed down to the test component as it's props and whenever changing props needs to be tested, all that needs
-to be done is to update the state of the container which will then trigger it to re-render and pass down it's updated state as the
+This solution to this is to create another component to act as a container for the component that is to be tested. The state of 
+that container can be passed down to the test component as it's props and whenever changing props needs to be tested, we 
+can just update the state of the container which will trigger it to re-render and pass down it's updated state as the
 new props of the test component.
 
 This example demonstrates how this solution can be implemented for a simple ES6 class component created by extending `React.Component`: 
@@ -138,9 +138,10 @@ const TestUtils = React.addons.TestUtils;
  * @param {Object} componentProps={}  The default props to set on the component
  * @return {Array} The container component as the first item, the component to test as the second item
  */
-function render(component, componentProps={}) {
+function renderInContainer(component, componentProps={}) {
 
   class PropChangeContainer extends React.Component {
+  
     constructor(props) {
     
       super(props);
@@ -150,13 +151,15 @@ function render(component, componentProps={}) {
       this.state = props;
       
     }
+    
     render() {
     
       // render the component within the container and pass the container state
-      // as the component props
+      // as the component's initial props
       return React.createElement(component, this.state);
       
     }
+    
   }
 
   // get both the container and component instances and return them
@@ -173,14 +176,14 @@ function render(component, componentProps={}) {
 export default render;
 {% endhighlight %}
 
-Finally, the test file uses the above `render()` function and makes changes the state of the container component which in turn 
-updates the props on the test component and allows changes to it's props to be tested.
+Finally, the test file uses the above `renderInContainer()` function and makes changes the state of the container 
+component which in turn updates the props on the test component and allows changes to it's props to be tested.
 
 {% highlight javascript %}
 import React from 'react/addons';
 const TestUtils = React.addons.TestUtils;
 
-import render from 'testutils/render';
+import render from 'testutils/renderInContainer';
 import TestComponent from 'path/to/TestComponent';
 
 describe('Testing props change', () => {
@@ -190,7 +193,7 @@ describe('Testing props change', () => {
     let container, instance, div, divDOM;
   
     // render an instance of the TestComponent inside a container and set the default props
-    [container, instance] = render(TestComponent, { text: 'original text' });
+    [container, instance] = renderInContainer(TestComponent, { text: 'original text' });
     
     // find the rendered div inside instance
     div = TestUtils.findRenderedDOMComponentWithTag(instance, 'div');
@@ -222,5 +225,10 @@ describe('Testing props change', () => {
 
 ### Conclusion
 
-So there you have it - two ways to test prop changes in React components.
-Do you know any better methods to test props? Be sure to let us know in the comments!
+These are just two approaches to testing changes to props in React. Do you use any other methods for this? Let me know 
+in the comments!
+
+And if none of this made any sense then be sure to check out the 
+[React TestUtils](https://facebook.github.io/react/docs/test-utils.html) docs and the
+[React Testing Tutorial](https://facebook.github.io/jest/docs/tutorial-react.html) on the Jest website
+for more information on getting started with testing in React.
