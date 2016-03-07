@@ -82,7 +82,7 @@
       generateTweetContent(Blarg.Cache.get(cacheKey), tpl);
     }
     else {
-      $.getJSON(`http://api.blarg.co.uk/tweets/${type}`, data => {
+      $.getJSON(`https://api.blarg.co.uk/tweets/${type}`, data => {
         Blarg.Cache.set(cacheKey, data, 5);
         generateTweetContent(data, tpl);
       });

@@ -58,7 +58,7 @@
       generateContent(Blarg.Cache.get(cacheKey));
     }
     else {
-      $.getJSON(`http://api.blarg.co.uk/photostream`, data => {
+      $.getJSON(`https://api.blarg.co.uk/photostream`, data => {
         Blarg.Cache.set(cacheKey, data, 60);
         generateContent(data);
       });
