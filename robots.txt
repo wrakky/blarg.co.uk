@@ -1,3 +1,3 @@
-Sitemap: http://blarg.co.uk/sitemap.xml
+Sitemap: https://blarg.co.uk/sitemap.xml
 User-agent: *
 Allow: /

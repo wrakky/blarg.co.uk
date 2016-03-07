@@ -2,7 +2,7 @@
 
 Jekyll repository for my personal site, blarg.co.uk. All content is copyright of Peter Newnham, but feel free to borrow, copy or adapt the Jekyll build.
 
-* Site: http://blarg.co.uk
+* Site: https://blarg.co.uk
 * Twitter: [@wrakky](https://twitter.com/wrakky)
 
 ## Dependencies
