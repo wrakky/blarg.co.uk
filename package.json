@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/wrakky/blarg.co.uk/issues"
   },
-  "homepage": "http://blarg.co.uk",
+  "homepage": "https://blarg.co.uk",
   "dependencies": {
     "bootstrap": "^3.3.5",
     "bootstrap-sass": "^3.3.5",
