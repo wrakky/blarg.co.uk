@@ -16,10 +16,10 @@
 
       <div class="collapse navbar-collapse" id="navbar-links">
         <ul class="nav navbar-nav navbar-right">
-          <li{% if page.pageClass == "blarg" %} class="active"{% endif %}><a href="{{ site.baseurl }}/blarg/">Blarg</a></li>
-          <li{% if page.pageClass == "blog" %} class="active"{% endif %}><a href="{{ site.baseurl }}/blog/">Blog</a></li>
-          <li{% if page.pageClass == "tools" %} class="active"{% endif %}><a href="{{ site.baseurl }}/tools/">Tools</a></li>
-          <li{% if page.pageClass == "astronomy" %} class="active"{% endif %}><a href="{{ site.baseurl }}/astronomy/">Astronomy</a></li>
+          <li{% if page.pageClass contains "blarg" %} class="active"{% endif %}><a href="{{ site.baseurl }}/blarg/">Blarg</a></li>
+          <li{% if page.pageClass contains "blog" %} class="active"{% endif %}><a href="{{ site.baseurl }}/blog/">Blog</a></li>
+          <li{% if page.pageClass contains "tools" %} class="active"{% endif %}><a href="{{ site.baseurl }}/tools/">Tools</a></li>
+          <li{% if page.pageClass contains "astronomy" %} class="active"{% endif %}><a href="{{ site.baseurl }}/astronomy/">Astronomy</a></li>
         </ul>
       </div>
 
