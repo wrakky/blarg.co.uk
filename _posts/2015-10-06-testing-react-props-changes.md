@@ -173,7 +173,7 @@ function renderInContainer(component, componentProps={}) {
 
 }
 
-export default render;
+export default renderInContainer;
 {% endhighlight %}
 
 Finally, the test file uses the above `renderInContainer()` function and makes changes the state of the container 
@@ -183,7 +183,7 @@ component which in turn updates the props on the test component and allows chang
 import React from 'react/addons';
 const TestUtils = React.addons.TestUtils;
 
-import render from 'testutils/renderInContainer';
+import renderInContainer from 'testutils/renderInContainer';
 import TestComponent from 'path/to/TestComponent';
 
 describe('Testing props change', () => {
